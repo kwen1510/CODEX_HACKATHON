@@ -1,0 +1,27 @@
+.DS_Store
+*.log
+
+# Local env
+.env
+**/.env
+*.env.local
+
+# Tool A dependencies
+tool-a-intake/node_modules
+
+# Uploaded/source zip archives
+*.zip
+
+# Uploaded worksheet artifacts
+tool-a-intake/storage/intake/*
+!tool-a-intake/storage/intake/.gitkeep
+
+# Lock/temp runtime files
+tool-a-intake/storage/locks/*
+!tool-a-intake/storage/locks/.gitkeep
+
+# Integration work/output artifacts
+tool-a-intake/storage/work/*
+!tool-a-intake/storage/work/.gitkeep
+tool-a-intake/storage/shippable/*
+!tool-a-intake/storage/shippable/.gitkeep

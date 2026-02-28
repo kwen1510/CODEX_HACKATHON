@@ -1,0 +1,20 @@
+{
+  "name": "tool-a-intake",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "process:queue": "node scripts/process_queue.js",
+    "env:init": "bash scripts/init_secure_env.sh",
+    "process:queue:secure": "bash scripts/run_process_queue_with_secure_env.sh"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.2",
+    "openai": "^4.104.0"
+  }
+}
